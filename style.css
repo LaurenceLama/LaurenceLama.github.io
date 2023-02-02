@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400;600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+/*
+
+Generics
+
+*/
+
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.transition {
+    transition: all 200ms ease-in-out;
+}
+
+section {
+    background-color: rgb(245, 245, 245);
+}
+
+.text--purple {
+    color: rgb(139, 56, 218);
+}
+
+.title {
+    font-size: 76px;
+    margin-bottom: 12px;
+    text-align: left;
+    line-height: 1;
+}
+
+/* clickererss */
+.click:hover {
+    transform: scale(1.2);
+}
+
+.click:active {
+    transform: scale(0.9);
+}
+
+
+
+
+
+/*Landing Page*/
+
+#landing-page {
+    min-height: 100vh; 
+    /* with this, the entire section covers the entire with of the page */
+}
+
+
+
+/*
+
+Navergation
+
+*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#personal-logo {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+}
+
+.nav__link--list {
+    display: flex;
+}
+
+.nav__link {
+    margin: 0 12px;
+}
+
+.nav__link--anchor {
+    color: #242424;
+    font-weight: 700;
+}
+
+.fa-adjust {
+    font-size: 18px;
+}
+
+
+/*
+
+Headerrr
+
+*/
+
+header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 30px;
+}
+
+.header__para {
+    font-size: 24px;
+    line-height: 1.7;
+    max-width: 420px;
+}
+
+.social__list {
+    margin-top: 16px;
+    display: flex;
+}
+
+.social__link {
+    background-color: rgb(139, 56, 218);
+    color: white;
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    border-radius: 50%;
+    font-size: 16px;
+
+    /* to have no oblongs with them radiuses, just df, then just realign with aic jcc */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
