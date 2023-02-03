@@ -27,6 +27,10 @@ a {
     transition: all 200ms ease-in-out;
 }
 
+.transition--smooth {
+    transition: all 360ms ease-in-out;
+}
+
 section {
     background-color: rgb(245, 245, 245);
 }
@@ -51,8 +55,20 @@ section {
     transform: scale(0.9);
 }
 
+button {
+    cursor: pointer;
+}
 
+ .container {
+    padding: 50px 0;
+ }
 
+ .row {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 12px;
+ }
 
 
 /*Landing Page*/
@@ -63,12 +79,12 @@ section {
 }
 
 
-
 /*
 
 Navergation
 
 */
+
 
 nav {
     display: flex;
@@ -78,6 +94,7 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    height: 100px;
 }
 
 #personal-logo {
@@ -147,3 +164,200 @@ header {
     align-items: center;
 }
 
+
+/* Mail Button */
+
+.mail__btn {
+    width: 70px;
+    height: 70px;
+    border: none;
+    box-shadow: 0 4px 16px rgb(139, 56, 218, 0.6)  ;
+    border-radius: 50%;
+    background-color: white;
+    color: rgb(139, 56, 218);
+    font-size: 28px;
+
+    /* positionings */
+    position: absolute;
+    bottom: 32px;
+    right: 40px;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    /* with left half comes with:: */
+    transform: translateX(-50%);
+}
+
+.scroll__icon {
+    width: 20px;
+    height: 30px;
+    border: 2px solid #242424;
+    border-radius: 24px;
+
+    /* to align them scrollers inside them 'mouse' */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll__icon:after {
+    content: '';
+    width: 4px;
+    height: 6px;
+    background-color: #242424;
+    border-radius: 2px;
+    animation: scroll 1s infinite alternate-reverse;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(-3px);
+    }
+}
+
+
+/*
+
+PROjects
+
+*/
+
+.section__title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.project__img {
+    width: 100%;
+}
+
+.project {
+    margin-bottom: 135px;
+}
+
+.project__wrapper {
+    position: relative;
+    border-radius: 40px;
+    box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.project__description {
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    color: white;
+    max-width: 540px;
+    opacity: 0;
+}
+
+
+.project__wrapper--bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #242424;
+    opacity: 0;
+    transition: all 360ms ease-in-out;
+}
+
+.project__description--title {
+    font-size: 40px;
+}
+
+.project__description--sub-title {
+    margin-top: 8px;
+}
+
+.project__description--para {
+    margin: 16px 0;   
+}
+
+.project__description--link {
+    color: white;
+}
+
+/* Description hover effects */
+.project__wrapper:hover {
+    box-shadow: 0 16px 40px 0 rgb(0, 0, 0, 0.5);
+}
+
+.project__wrapper:hover .project__description {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.project__wrapper:hover .project__wrapper--bg {
+    opacity: 0.8;
+}
+
+
+/*
+
+FOoter
+
+yeh also these, are, hmm, yeh, copied,
+*/
+
+
+footer {
+    background-color: #161616;
+}
+
+.footer__logo--img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8% 0;
+}
+
+.footer__social--link, 
+.footer__copyright, 
+.footer__logo--popper {
+    color: white;
+}
+
+.footer__social--list {
+    margin-bottom: 16px;
+}
+
+.footer__social--list {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__logo--popper {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-weight: 700;
+    opacity: 0;
+    transition: all 400ms ease;
+}
+
+.footer__anchor {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.footer__anchor:hover .footer__logo--popper {
+    transform: translateX(50px);
+    opacity: 1;
+}

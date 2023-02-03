@@ -13,6 +13,7 @@
     <script src="/app.js"></script>
   </head>
   <!-- we use BEM = Block__Element--Modifier -->
+  <!-- inspirational website::  https://davidbr4gg.github.io/exclusive-eportfolio/# -->
   <body>
     <section id="landing-page">
       <nav>
@@ -68,7 +69,117 @@
           </div>
         </div>
       </header>
-      <!-- the mail thing -->
+      <button class="mail__btn transition click">
+        <i class="fas fa-envelope"></i>
+      </button>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon transition click"></div>
+      </a>
     </section>
+
+    <!-- Project Section -->
+
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="text--purple">Projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper transition--smooth">
+                <img src="./Tutorial Exclusive Eportfolio/assets/blinker mockup.png" alt="" class="project__img">
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description transition--smooth">
+                  <h3 class="project__description--title">E-Commerce Project</h3>
+                  <h4 class="project__description--sub-title">Html, CSS, JavaScript</h4>
+                  <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nulla fuga repudiandae provident voluptatibus aliquid voluptas? Explicabo dicta aut libero!</p>
+                  <div class="project__description--links">
+                    <a href="#" class="project__description--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="project__description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper transition--smooth">
+                <img src="./Tutorial Exclusive Eportfolio/assets/blinker mockup.png" alt="" class="project__img">
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description transition--smooth">
+                  <h3 class="project__description--title">Duplicated Projects</h3>
+                  <h4 class="project__description--sub-title">Html, CSS, JavaScript</h4>
+                  <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nulla fuga repudiandae provident voluptatibus aliquid voluptas? Explicabo dicta aut libero!</p>
+                  <div class="project__description--links">
+                    <a href="#" class="project__description--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="project__description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper transition--smooth">
+                <img src="./Tutorial Exclusive Eportfolio/assets/blinker mockup.png" alt="" class="project__img">
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description transition--smooth">
+                  <h3 class="project__description--title">JavaScript experience Project</h3>
+                  <h4 class="project__description--sub-title">Html, CSS, JavaScript</h4>
+                  <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nulla fuga repudiandae provident voluptatibus aliquid voluptas? Explicabo dicta aut libero!</p>
+                  <div class="project__description--links">
+                    <a href="#" class="project__description--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="project__description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section, needs polishing but yeh, copied -->
+    <footer>
+      <div class="row footer__row">
+        <a href="#" class="footer__anchor">
+          <figure class="footer__logo">
+            <img src="SUBARASHI.png" class="footer__logo--img" alt="">
+          </figure>
+          <span class="footer__logo--popper">
+            Top
+            <i class="fas fa-arrow-up"></i>
+          </span>
+        </a>
+        <div class="footer__social--list">
+          <a href="https://frontendsimplified.com/" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white">FSE</a>
+          <a href="https://github.com/LaurenceLama" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white">Github</a>
+          <a href="mailto:laurencelamafse@gmail.com" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white">Email</a>
+          <a href="./misc/Im Lazy.pdf" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white">Resume</a>
+        </div>
+        <div class="footer__copyright">Copyright © 2023 Laurence Lama</div>
+      </div>
+    </footer>
   </body>
 </html>
