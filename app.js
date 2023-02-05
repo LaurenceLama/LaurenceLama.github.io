@@ -1,0 +1,1 @@
+// I wished to follow along the rest of the video from using emailjs.com, my newly created account does not able to be provided with a confirmation email request. I've tried everything, even made a 2nd account, still did not work, send help..

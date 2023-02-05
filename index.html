@@ -56,16 +56,23 @@
           <h1 class="title">YOW</h1>
           <h1 class="title title--secondary text--purple">I am Coder Gads</h1>
           <p class="header__para">
-            I am a <span class="text--purple"><b>Software Engineer</b></span> that is
+            I am a
+            <span class="text--purple"><b>Software Engineer</b></span> that is
             fully committed on creating web applications with easy access to
             satisfy user experience.
-            <br>
+            <br />
             More information <span class="text--purple"><b>about me</b></span>
           </p>
           <div class="social__list">
-            <a href="" class="social__link click transition"><i class="fab fa-github"></i></a>
-            <a href="" class="social__link click transition"><i class="fab fa-linkedin-in"></i></a>
-            <a href="" class="social__link click transition"><i class="fab fa-discord"></i></a>
+            <a href="" class="social__link click transition"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="" class="social__link click transition"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="" class="social__link click transition"
+              ><i class="fab fa-discord"></i
+            ></a>
           </div>
         </div>
       </header>
@@ -78,32 +85,80 @@
       <div class="modal">
         <div class="modal__half modal__about">
           <h3 class="modal__title modal__title--about">Here is me</h3>
-          <h4 class="modal__sub-title modal__sub-title--about">Coding is like breathing to me.</h4>
+          <h4 class="modal__sub-title modal__sub-title--about text--purple">
+            Coding is like breathing to me.
+          </h4>
           <p class="modal__para">
-            I am the best coder ever. I see it as a very fun hobby and it is engrained in my person like it is part of my habit.
-            <br>
-            I strive to code with substance instead of forcing it by performing everyday. However, when needed, it is basic to code everyday anyway so yeh, u hire I
+            I am the best coder ever. I see it as a very fun hobby and it is
+            engrained in my person like it is part of my habit.
+            <br />
+            I strive to code with substance instead of forcing it by performing
+            everyday. However, when needed, it is basic to code everyday anyway
+            so yeh, u hire I
           </p>
           <div class="modal__languages">
             <figure class="modal__language">
-              <img src="	https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="" class="modal__language--img transition">
+              <img
+                src="	https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt=""
+                class="modal__language--img transition"
+              />
               <span class="language__name transition">HTML</span>
             </figure>
             <figure class="modal__language">
-              <img src="	https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="" class="modal__language--img transition">
-              <span class="language__name transition">HTML</span>
+              <img
+                src="	https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt=""
+                class="modal__language--img transition"
+              />
+              <span class="language__name transition">CSS</span>
             </figure>
             <figure class="modal__language">
-              <img src="	https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="" class="modal__language--img transition">
-              <span class="language__name transition">HTML</span>
+              <img
+                src="		https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                alt=""
+                class="modal__language--img transition"
+              />
+              <span class="language__name transition">JavaScript</span>
             </figure>
             <figure class="modal__language">
-              <img src="	https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="" class="modal__language--img transition">
-              <span class="language__name transition">HTML</span>
+              <img
+                src="	https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                alt=""
+                class="modal__language--img transition"
+              />
+              <span class="language__name transition">React</span>
             </figure>
           </div>
         </div>
-        <div class="modal__half modal__contact">Chat me now</div>
+        <div class="modal__half modal__contact">
+          <h3 class="modal__title modal__title--about">Hire me like, now</h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            Striving to work at a reasonable job 
+          </h4>
+          <form action="" id="contact__form">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input type="text" name="user_name" class="input transition" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input type="text" name="user_email" class="input transition" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea type="text" name="message" class="input transition" required></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit transition">Full send</button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Message Received, hoping to speak with you soon!
+          </div>
+        </div>
+        <i class="fas fa-times modal__exit click transition"></i>
       </div>
     </section>
 
@@ -118,12 +173,24 @@
           <ul class="project__list">
             <li class="project">
               <div class="project__wrapper transition--smooth">
-                <img src="./Tutorial Exclusive Eportfolio/assets/blinker mockup.png" alt="" class="project__img">
+                <img
+                  src="./Tutorial Exclusive Eportfolio/assets/blinker mockup.png"
+                  alt=""
+                  class="project__img"
+                />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description transition--smooth">
-                  <h3 class="project__description--title">E-Commerce Project</h3>
-                  <h4 class="project__description--sub-title">Html, CSS, JavaScript</h4>
-                  <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nulla fuga repudiandae provident voluptatibus aliquid voluptas? Explicabo dicta aut libero!</p>
+                  <h3 class="project__description--title">
+                    E-Commerce Project
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eum, nulla fuga repudiandae provident voluptatibus aliquid
+                    voluptas? Explicabo dicta aut libero!
+                  </p>
                   <div class="project__description--links">
                     <a href="#" class="project__description--link">
                       <i class="fab fa-github"></i>
@@ -137,12 +204,24 @@
             </li>
             <li class="project">
               <div class="project__wrapper transition--smooth">
-                <img src="./Tutorial Exclusive Eportfolio/assets/blinker mockup.png" alt="" class="project__img">
+                <img
+                  src="./Tutorial Exclusive Eportfolio/assets/blinker mockup.png"
+                  alt=""
+                  class="project__img"
+                />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description transition--smooth">
-                  <h3 class="project__description--title">Duplicated Projects</h3>
-                  <h4 class="project__description--sub-title">Html, CSS, JavaScript</h4>
-                  <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nulla fuga repudiandae provident voluptatibus aliquid voluptas? Explicabo dicta aut libero!</p>
+                  <h3 class="project__description--title">
+                    Duplicated Projects
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eum, nulla fuga repudiandae provident voluptatibus aliquid
+                    voluptas? Explicabo dicta aut libero!
+                  </p>
                   <div class="project__description--links">
                     <a href="#" class="project__description--link">
                       <i class="fab fa-github"></i>
@@ -156,12 +235,24 @@
             </li>
             <li class="project">
               <div class="project__wrapper transition--smooth">
-                <img src="./Tutorial Exclusive Eportfolio/assets/blinker mockup.png" alt="" class="project__img">
+                <img
+                  src="./Tutorial Exclusive Eportfolio/assets/blinker mockup.png"
+                  alt=""
+                  class="project__img"
+                />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description transition--smooth">
-                  <h3 class="project__description--title">JavaScript experience Project</h3>
-                  <h4 class="project__description--sub-title">Html, CSS, JavaScript</h4>
-                  <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nulla fuga repudiandae provident voluptatibus aliquid voluptas? Explicabo dicta aut libero!</p>
+                  <h3 class="project__description--title">
+                    JavaScript experience Project
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eum, nulla fuga repudiandae provident voluptatibus aliquid
+                    voluptas? Explicabo dicta aut libero!
+                  </p>
                   <div class="project__description--links">
                     <a href="#" class="project__description--link">
                       <i class="fab fa-github"></i>
@@ -183,7 +274,7 @@
       <div class="row footer__row">
         <a href="#" class="footer__anchor">
           <figure class="footer__logo">
-            <img src="SUBARASHI.png" class="footer__logo--img" alt="">
+            <img src="SUBARASHI.png" class="footer__logo--img" alt="" />
           </figure>
           <span class="footer__logo--popper">
             Top
@@ -191,24 +282,34 @@
           </span>
         </a>
         <div class="footer__social--list">
-          <a href="https://frontendsimplified.com/" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white">LinkedIn</a>
-          <a href="https://github.com/LaurenceLama" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white">Github</a>
-          <a href="mailto:laurencelamafse@gmail.com" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white">Email</a>
-          <a href="./misc/Im Lazy.pdf" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white">Resume</a>
+          <a
+            href="https://frontendsimplified.com/"
+            target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/LaurenceLama"
+            target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            >Github</a
+          >
+          <a
+            href="mailto:laurencelamafse@gmail.com"
+            target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            >Email</a
+          >
+          <a
+            href="./misc/Im Lazy.pdf"
+            target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            >Resume</a
+          >
         </div>
-        <div class="footer__copyright">Copyright © 2023 <span class="text--purple">Laurence Lama</span></div>
+        <div class="footer__copyright">
+          Copyright © 2023 <span class="text--purple">Laurence Lama</span>
+        </div>
       </div>
     </footer>
   </body>

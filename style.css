@@ -49,6 +49,11 @@ section {
 }
 
 /* clickererss */
+
+.click {
+    cursor: pointer;
+}
+
 .click:hover {
     transform: scale(1.2);
 }
@@ -276,17 +281,48 @@ Modalers
 .modal__half {
     width: 50%;
     padding: 40px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
 }
 
+input, textarea {
+    width: 100%;
+    background-color: #242424;
+    color: white;
+    border: 3px solid rgb(245, 245, 245);
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    outline: none;
+    height: 40px;
+}
 
+input:hover, textarea:hover {
+    border-color: rgb(139, 56, 218);
+}
+
+input:focus, textarea:focus {
+    border-color: rgb(139, 56, 218);
+
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+    margin-top: 8px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
 
 /* About Modal */
 
 .modal__about {
     background-color: rgb(245, 245, 245);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .modal__languages {
@@ -322,6 +358,20 @@ Modalers
     width: 100%;
 }
 
+.modal__title {
+    font-size: 26px;
+}
+
+.modal__sub-title {
+    font-size: 14px;
+    margin: 12px 0 24px;
+}
+
+.modal__para {
+    margin-bottom: 12px;
+    line-height: 1.75;
+}
+
 /* Contact Modal */
 
 .modal__contact {
@@ -329,7 +379,80 @@ Modalers
     color: rgb(245, 245, 245);
 }
 
+.form__item {
+    margin-bottom: 20px;
 
+}
+
+.form__submit {
+    width: 100%;
+    max-width: 240px;
+    padding: 12px 24px;
+    color: rgb(139, 56, 218);
+    font-weight: 700;
+    font-size: 20px;
+    background-color: rgb(245, 245, 245);
+}
+
+.form__submit:hover {
+    border: 2px solid rgb(245, 245, 245);
+    background-color: transparent;
+    color: rgb(245, 245, 245);
+}
+
+.form__submit:active {
+    border: 2px solid rgb(139, 56, 218);
+    color: rgb(139, 56, 218);
+}
+
+/* Modal loading spin */
+.modal__overlay {
+    position: absolute; /* relative to modal__half*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.modal__overlay--loading {
+    background-color: rgb(139, 56, 218);
+    font-size: 90px;
+}
+
+.fa-spinner {
+    animation: spin 800ms infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.modal__overlay--success {
+    background-color: rgb(3, 146, 3);
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 32px;
+}
+
+.modal__exit {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: rgb(139, 56, 218);
+    font-size: 36px;
+    z-index: 20;
+}
 
 /*
 
