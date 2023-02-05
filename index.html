@@ -11,6 +11,14 @@
       crossorigin="anonymous"
     ></script>
     <script src="/app.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("6bb0lY29GPPPQglEn");
+   })();
+</script>
   </head>
   <!-- we use BEM = Block__Element--Modifier -->
   <!-- inspirational website::  https://davidbr4gg.github.io/exclusive-eportfolio/# -->
@@ -139,7 +147,7 @@
           <h4 class="modal__sub-title modal__sub-title--about">
             Striving to work at a reasonable job 
           </h4>
-          <form action="" id="contact__form">
+          <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
               <label class="form__item--label">Name</label>
               <input type="text" name="user_name" class="input transition" required></input>
