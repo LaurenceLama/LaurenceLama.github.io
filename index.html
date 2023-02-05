@@ -14,7 +14,7 @@
   </head>
   <!-- we use BEM = Block__Element--Modifier -->
   <!-- inspirational website::  https://davidbr4gg.github.io/exclusive-eportfolio/# -->
-  <body>
+  <body onmousemove="moveBackground(event)">
     <section id="landing-page">
       <nav>
         <figure>
@@ -24,13 +24,13 @@
           <li class="nav__link">
             <a
               href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black" onclick="toggleModal()"
               >About</a
             >
           </li>
           <li class="nav__link">
             <a
-              href="#"
+              href="#projects"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Projects</a
             >
@@ -38,14 +38,14 @@
           <li class="nav__link">
             <a
               href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black" onclick="toggleModal()"
               >Contact</a
             >
           </li>
           <li class="nav__link">
             <a
               href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black" onclick="toggleContrast()"
               ><i class="fas fa-adjust"></i
             ></a>
           </li>
@@ -53,15 +53,15 @@
       </nav>
       <header>
         <div class="header__content">
-          <h1 class="title">YOW</h1>
-          <h1 class="title title--secondary text--purple">I am Coder Gads</h1>
+          <h1 class="title title--white">YOW</h1>
+          <h1 class="title text--purple">I am Coder Gads</h1>
           <p class="header__para">
             I am a
             <span class="text--purple"><b>Software Engineer</b></span> that is
             fully committed on creating web applications with easy access to
             satisfy user experience.
             <br />
-            More information <span class="text--purple"><b>about me</b></span>
+            More information <span class="text--purple click" onclick="toggleModal()"><b>about me</b></span>
           </p>
           <div class="social__list">
             <a href="" class="social__link click transition"
@@ -76,14 +76,16 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn transition click">
-        <i class="fas fa-envelope"></i>
-      </button>
+      <a href="#">
+        <button class="mail__btn transition click" onclick="toggleModal()">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </a>
       <a href="#projects" class="scroll">
         <div class="scroll__icon transition click"></div>
       </a>
       <div class="modal">
-        <div class="modal__half modal__about">
+        <div class="modal__half modal__about transition--smooth">
           <h3 class="modal__title modal__title--about">Here is me</h3>
           <h4 class="modal__sub-title modal__sub-title--about text--purple">
             Coding is like breathing to me.
@@ -131,7 +133,8 @@
             </figure>
           </div>
         </div>
-        <div class="modal__half modal__contact">
+        <div class="modal__half modal__contact transition--smooth">
+        <i class="fas fa-times modal__exit click transition" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--about">Hire me like, now</h3>
           <h4 class="modal__sub-title modal__sub-title--about">
             Striving to work at a reasonable job 
@@ -149,7 +152,9 @@
               <label class="form__item--label">Message</label>
               <textarea type="text" name="message" class="input transition" required></textarea>
             </div>
-            <button id="contact__submit" class="form__submit transition">Full send</button>
+            <div class="submit__wrapper">
+              <button id="contact__submit" class="form__submit transition">Full send</button>
+            </div>
           </form>
           <div class="modal__overlay modal__overlay--loading">
             <i class="fas fa-spinner"></i>
@@ -158,11 +163,23 @@
             Message Received, hoping to speak with you soon!
           </div>
         </div>
-        <i class="fas fa-times modal__exit click transition"></i>
       </div>
+      <img src="./Tutorial Exclusive Eportfolio/assets/squiggly.svg" alt="" class="shape shape--0">
+      <img src="./Tutorial Exclusive Eportfolio/assets/triangle.svg" alt="" class="shape shape--1">
+      <img src="./Tutorial Exclusive Eportfolio/assets/semi circle.svg" alt="" class="shape shape--2">
+      <img src="./Tutorial Exclusive Eportfolio/assets/circle.svg" alt="" class="shape shape--3">
+      <img src="/SUBARASHI.png" alt="" class="shape shape--4">
+      <img src="./Tutorial Exclusive Eportfolio/assets/circle.svg" alt="" class="shape shape--5">
+      <img src="./Tutorial Exclusive Eportfolio/assets/semi circle.svg" alt="" class="shape shape--6">
+      <img src="./Tutorial Exclusive Eportfolio/assets/triangle.svg" alt="" class="shape shape--7">
+      <img src="./Tutorial Exclusive Eportfolio/assets/squiggly.svg" alt="" class="shape shape--8">
     </section>
 
-    <!-- Project Section -->
+    <!--
+
+      Project Section 
+
+    -->
 
     <section id="projects">
       <div class="container">
@@ -269,7 +286,11 @@
       </div>
     </section>
 
-    <!-- footer section, needs polishing but yeh, copied -->
+    <!-- 
+
+      footer section
+    
+    -->
     <footer>
       <div class="row footer__row">
         <a href="#" class="footer__anchor">
@@ -295,13 +316,12 @@
             >Github</a
           >
           <a
-            href="mailto:laurencelamafse@gmail.com"
-            target="_blank"
-            class="footer__social--link link__hover-effect link__hover-effect--white"
+            href="#"
+            class="footer__social--link link__hover-effect link__hover-effect--white" onclick="toggleModal()"
             >Email</a
           >
           <a
-            href="./misc/Im Lazy.pdf"
+            href="Im Lazy.pdf"
             target="_blank"
             class="footer__social--link link__hover-effect link__hover-effect--white"
             >Resume</a
