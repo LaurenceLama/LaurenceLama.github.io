@@ -547,6 +547,10 @@ PROjects
   transition: all 600ms ease-in-out;
 }
 
+.netflix {
+  transform: scale(1.02);
+}
+
 .project {
   margin-bottom: 135px;
 }
@@ -702,7 +706,7 @@ TWISTER SHAPES
 .shape--4 {
   left: 49vw;
   top: 50vh;
-  max-width: 60px;
+  max-width: 40px;
 }
 .shape--5 {
   left: 90vw;
