@@ -47,6 +47,10 @@ section {
   color: rgb(139, 56, 218);
 }
 
+.text--light-purple {
+  color: rgb(190, 150, 228);
+}
+
 .title {
   font-size: 76px;
   margin-bottom: 12px;
@@ -545,10 +549,7 @@ PROjects
   width: 100%;
   /* apparently transitioning images does not like my generic 'transition__smooth', even the very man, EVEN THE VERY, or maybe I am just very dumb */
   transition: all 600ms ease-in-out;
-}
-
-.netflix {
-  transform: scale(1.02);
+  transform: scale(1.5);
 }
 
 .project {
@@ -596,7 +597,15 @@ PROjects
 
 .project__description--link {
   color: white;
+  margin-right: 4px;
 }
+
+.project__description--links {
+  transform: scale(1.1);
+  max-width: 300px;
+  padding-left: 12px;
+}
+
 
 /* Description hover effects */
 .project__wrapper:hover {

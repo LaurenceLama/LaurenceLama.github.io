@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal 'My' E-Portfolio</title>
     <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/assets/favicon.ico" />
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
     <script src="/app.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("6bb0lY29GPPPQglEn");
-   })();
-</script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("6bb0lY29GPPPQglEn");
+      })();
+    </script>
   </head>
   <!-- we use BEM = Block__Element--Modifier -->
   <!-- inspirational website::  https://davidbr4gg.github.io/exclusive-eportfolio/# -->
@@ -32,7 +34,8 @@
           <li class="nav__link">
             <a
               href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black" onclick="toggleModal()"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              onclick="toggleModal()"
               >About</a
             >
           </li>
@@ -46,14 +49,16 @@
           <li class="nav__link">
             <a
               href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black" onclick="toggleModal()"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              onclick="toggleModal()"
               >Contact</a
             >
           </li>
           <li class="nav__link">
             <a
               href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black" onclick="toggleContrast()"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              onclick="toggleContrast()"
               ><i class="fas fa-adjust"></i
             ></a>
           </li>
@@ -66,18 +71,31 @@
           <p class="header__para">
             I am an aspiring
             <span class="text--purple"><b>Software Engineer</b></span> that is
-            committed on creating web applications and learn more about other areas of programming
+            committed on creating web applications and learn more about other
+            areas of programming
             <br />
-            More information <span class="text--purple click" onclick="toggleModal()"><b>about me</b></span>
+            More information
+            <span class="text--purple click" onclick="toggleModal()"
+              ><b>about me</b></span
+            >
           </p>
           <div class="social__list">
-            <a href="https://github.com/LaurenceLama" class="social__link click transition" target="_blank"
+            <a
+              href="https://github.com/LaurenceLama"
+              class="social__link click transition"
+              target="_blank"
               ><i class="fab fa-github"></i
             ></a>
-            <a href="https://www.linkedin.com/in/laurence-lama-b31470280/" class="social__link click transition" target="_blank"
+            <a
+              href="https://www.linkedin.com/in/laurence-lama-b31470280/"
+              class="social__link click transition"
+              target="_blank"
               ><i class="fab fa-linkedin-in"></i
             ></a>
-            <a href="https://discordapp.com/users/551688537250988052/" class="social__link click transition" target="_blank"
+            <a
+              href="https://discordapp.com/users/551688537250988052/"
+              class="social__link click transition"
+              target="_blank"
               ><i class="fab fa-discord"></i
             ></a>
           </div>
@@ -93,17 +111,19 @@
       </a>
       <div class="modal">
         <div class="modal__half modal__about transition--smooth">
-          <h3 class="modal__title modal__title--about">Here is me</h3>
+          <h3 class="modal__title modal__title--about">More about me</h3>
           <h4 class="modal__sub-title modal__sub-title--about text--purple">
-            Coding is like breathing to me.
+            Exploring Possibilities with Programming.
           </h4>
           <p class="modal__para">
-            I am the best coder ever. I see it as a very fun hobby and it is
-            engrained in my person like it is part of my habit.
+            I am currently pursuing BS in Electronics Communications Engineering
+            at De La Salle University Dasmariñas.
             <br />
-            I strive to code with substance instead of forcing it by performing
-            everyday. However, when needed, it is basic to code everyday anyway
-            so yeh, u hire I
+            In this line of course, I have realized that my interests led me to
+            dive deeper with manipulating programming languages. 
+            <br>
+            And here I am,
+            educating myself to be a marketable front-end developer.
           </p>
           <div class="modal__languages">
             <figure class="modal__language">
@@ -141,26 +161,50 @@
           </div>
         </div>
         <div class="modal__half modal__contact transition--smooth">
-        <i class="fas fa-times modal__exit click transition" onclick="toggleModal()"></i>
-          <h3 class="modal__title modal__title--about">Hire me like, now</h3>
+          <i
+            class="fas fa-times modal__exit click transition"
+            onclick="toggleModal()"
+          ></i>
+          <h3 class="modal__title modal__title--about">Hire me!</h3>
           <h4 class="modal__sub-title modal__sub-title--about">
-            Striving to work at a reasonable job 
+            <span class="text--light-purple">
+              <u>
+                Currently finding internship opportunitites
+              </u>
+            </span>
           </h4>
           <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
               <label class="form__item--label">Name</label>
-              <input type="text" name="user_name" class="input transition" required></input>
+              <input
+                type="text"
+                name="user_name"
+                class="input transition"
+                required
+              />
             </div>
             <div class="form__item">
               <label class="form__item--label">Email</label>
-              <input type="text" name="user_email" class="input transition" required></input>
+              <input
+                type="text"
+                name="user_email"
+                class="input transition"
+                required
+              />
             </div>
             <div class="form__item">
               <label class="form__item--label">Message</label>
-              <textarea type="text" name="message" class="input transition" required></textarea>
+              <textarea
+                type="text"
+                name="message"
+                class="input transition"
+                required
+              ></textarea>
             </div>
             <div class="submit__wrapper">
-              <button id="contact__submit" class="form__submit transition">Full send</button>
+              <button id="contact__submit" class="form__submit transition">
+                Full send
+              </button>
             </div>
           </form>
           <div class="modal__overlay modal__overlay--loading">
@@ -171,15 +215,15 @@
           </div>
         </div>
       </div>
-      <img src="./assets/squiggly.svg" alt="" class="shape shape--0">
-      <img src="./assets/triangle.svg" alt="" class="shape shape--1">
-      <img src="./assets/semi circle.svg" alt="" class="shape shape--2">
-      <img src="./assets/circle.svg" alt="" class="shape shape--3">
-      <img src="./assets/MY temporary logo.png" alt="" class="shape shape--4">
-      <img src="./assets/circle.svg" alt="" class="shape shape--5">
-      <img src="./assets/semi circle.svg" alt="" class="shape shape--6">
-      <img src="./assets/triangle.svg" alt="" class="shape shape--7">
-      <img src="./assets/squiggly.svg" alt="" class="shape shape--8">
+      <img src="./assets/squiggly.svg" alt="" class="shape shape--0" />
+      <img src="./assets/triangle.svg" alt="" class="shape shape--1" />
+      <img src="./assets/semi circle.svg" alt="" class="shape shape--2" />
+      <img src="./assets/circle.svg" alt="" class="shape shape--3" />
+      <img src="./assets/MY temporary logo.png" alt="" class="shape shape--4" />
+      <img src="./assets/circle.svg" alt="" class="shape shape--5" />
+      <img src="./assets/semi circle.svg" alt="" class="shape shape--6" />
+      <img src="./assets/triangle.svg" alt="" class="shape shape--7" />
+      <img src="./assets/squiggly.svg" alt="" class="shape shape--8" />
     </section>
 
     <!--
@@ -197,29 +241,26 @@
           <ul class="project__list">
             <li class="project">
               <div class="project__wrapper transition--smooth">
-                <img
-                  src="./assets/ecomerce.png"
-                  alt=""
-                  class="project__img"
-                />
+                <img src="./assets/ecomerce.png" alt="" class="project__img" />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description transition--smooth">
                   <h3 class="project__description--title">
-                    E-Commerce Project
+                    <span class="text--purple"> E-Commerce Project </span>
                   </h3>
                   <h4 class="project__description--sub-title">
-                    Html, CSS, JavaScript
+                    Html, CSS, JavaScript, React
                   </h4>
                   <p class="project__description--para">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eum, nulla fuga repudiandae provident voluptatibus aliquid
-                    voluptas? Explicabo dicta aut libero!
+                   <b><u>Note:</u></b> Press the library header icon upon observing the website
+                    <br>
+                    <br>
+                    This project features a react website with several javascript functions. It uses a local API to learn about fetching data and react basics. Javascript functions also include cart system excluding the payment section.
                   </p>
                   <div class="project__description--links">
-                    <a href="#" class="project__description--link">
+                    <a href="https://github.com/LaurenceLama/e-commerce-react" class="project__description--link" target="_blank">
                       <i class="fab fa-github"></i>
                     </a>
-                    <a href="#" class="project__description--link">
+                    <a href="https://LaurenceLama.github.io/e-commerce-react" target="_blank" class="project__description--link">
                       <i class="fas fa-link"></i>
                     </a>
                   </div>
@@ -236,21 +277,19 @@
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description transition--smooth">
                   <h3 class="project__description--title">
-                    Netflix Clone
+                    <span class="text--purple"> Netflix Clone </span>
                   </h3>
                   <h4 class="project__description--sub-title">
-                    Html, CSS, Typescript
+                    Tailwind CSS, Typescript, JavaScript, Firebase, Stripe
                   </h4>
                   <p class="project__description--para">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eum, nulla fuga repudiandae provident voluptatibus aliquid
-                    voluptas? Explicabo dicta aut libero!
+                    This project partly mimics the original website but with fewer functions. Signing up can be anything as long as it follows the email format and appropriate password. Also uses stripe payment function, for this project search for 'stripe test cards' and try out working/non-working cards. 
                   </p>
                   <div class="project__description--links">
-                    <a href="#" class="project__description--link">
+                    <a href="https://github.com/LaurenceLama/netflix-clone" target="_blank" class="project__description--link">
                       <i class="fab fa-github"></i>
                     </a>
-                    <a href="#" class="project__description--link">
+                    <a href="#" class="project__description--link" target="_blank">
                       <i class="fas fa-link"></i>
                     </a>
                   </div>
@@ -260,9 +299,9 @@
             <li class="project">
               <div class="project__wrapper transition--smooth">
                 <img
-                  src="./Tutorial Exclusive Eportfolio/assets/blinker mockup.png"
+                  src="./assets/akneemei.png"
                   alt=""
-                  class="project__img"
+                  class="project__img akneemei"
                 />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description transition--smooth">
@@ -273,15 +312,12 @@
                     Html, CSS, JavaScript
                   </h4>
                   <p class="project__description--para">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eum, nulla fuga repudiandae provident voluptatibus aliquid
-                    voluptas? Explicabo dicta aut libero!
-                  </p>
+                    This solo project consists of using online database fetching anime api. Along with this are other javascript functions that builds a mock anime website. Search bar function not yet hardcoded as well as other content.
                   <div class="project__description--links">
-                    <a href="#" class="project__description--link">
+                    <a href="https://github.com/LaurenceLama/JavaScript---THE-project-mine-" class="project__description--link" target="_blank">
                       <i class="fab fa-github"></i>
                     </a>
-                    <a href="#" class="project__description--link">
+                    <a href="#" class="project__description--link" target="_blank">
                       <i class="fas fa-link"></i>
                     </a>
                   </div>
@@ -302,7 +338,11 @@
       <div class="row footer__row">
         <a href="#" class="footer__anchor">
           <figure class="footer__logo">
-            <img src="assets/MY temporary logo.png" class="footer__logo--img" alt="" />
+            <img
+              src="assets/MY temporary logo.png"
+              class="footer__logo--img"
+              alt=""
+            />
           </figure>
           <span class="footer__logo--popper">
             Top
@@ -324,7 +364,8 @@
           >
           <a
             href="#"
-            class="footer__social--link link__hover-effect link__hover-effect--white" onclick="toggleModal()"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            onclick="toggleModal()"
             >Email</a
           >
           <a
